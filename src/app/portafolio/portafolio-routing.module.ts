@@ -7,6 +7,10 @@ const routes: Routes = [
     path: '',
     component: PaginaPrincipalComponent,
   },
+  {
+    path: '**',
+    redirectTo: '',
+  },
 ];
 
 @NgModule({

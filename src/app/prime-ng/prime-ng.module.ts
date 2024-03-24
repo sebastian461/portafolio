@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
+import { PanelModule } from 'primeng/panel';
 
 @NgModule({
-  exports: [],
+  exports: [PanelModule],
 })
 export class PrimeNgModule {}
