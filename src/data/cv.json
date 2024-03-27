@@ -1,0 +1,82 @@
+{
+  "info": {
+    "name": "Sebastián Álava",
+    "description": "Soy un ingeniero en Ciencias de la Computación con experiencia en desarrollo full stack junior. Aunque actualmente estoy buscando oportunidades laborales, mi interés y habilidad en el desarrollo web me mantienen en constante aprendizaje y crecimiento profesional. Me apasiona explorar nuevas tecnologías y tengo un compromiso firme con el aprendizaje autónomo, lo que me permite adaptarme y evolucionar en el dinámico campo de la informática."
+  },
+  "experience": [
+    {
+      "position": "Asistente en Sistemas",
+      "company": "ITSEP, Noviembre 2022 - Abril 2023",
+      "description": [
+        "Desarrollo del sistema informático de Autoevaluacióninstitucional."
+      ]
+    },
+    {
+      "position": "Pasante IT",
+      "company": "Empresa CNPC, Abr 2022 - Oct 2022",
+      "description": [
+        "Asistencia técnica.",
+        "Mantenimiento y reparación de equipos.",
+        "Inventariado.",
+        "Mantenimiento de servidores."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institute": "Universidad UTE",
+      "date": "2019 - 2023",
+      "description": "Ingeniería en Ciencias de la Computación"
+    },
+    {
+      "institute": "Academia Aeronáutica 'MayorPedro Traversari'",
+      "date": "2016",
+      "description": "Bachiller en Ciencias"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Aprende Programación Backend en C#.NET",
+      "instructor": "Héctor de León",
+      "plataform": "Udemy",
+      "date": "02-2024",
+      "duration": 6
+    },
+    {
+      "title": "React: De cero a experto (Hooks y MERN)",
+      "instructor": "Fernando Herrera",
+      "plataform": "Udemy",
+      "date": "02-2024",
+      "duration": 54
+    },
+    {
+      "title": "JavaScript Moderno: Guía para dominar ellenguaje",
+      "instructor": "Fernando Herrera",
+      "plataform": "Udemy",
+      "date": "11-2023",
+      "duration": 22
+    }
+  ],
+  "skills": [
+    {
+      "skill": "Angular",
+      "percent": 50,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Angular_gradient.png"
+    },
+    {
+      "skill": "React",
+      "percent": 50,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1024px-React.svg.png"
+    },
+    {
+      "skill": "Laravel",
+      "percent": 25,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/800px-Laravel.svg.png"
+    },
+    {
+      "skill": ".NET",
+      "percent": 25,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1024px-Microsoft_.NET_logo.svg.png"
+    }
+  ]
+}

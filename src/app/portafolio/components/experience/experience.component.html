@@ -1,14 +1,12 @@
 <p-fieldset legend="Experiencia">
-  <h2>Asistente en Sistemas</h2>
-  <span>ITSEP, Noviembre 2022 - Abril 2023</span>
-  <p>Desarrollo del sistema informático de Autoevaluacióninstitucional.</p>
-  <p-divider></p-divider>
-  <h2>Pasante IT</h2>
-  <span>Empresa CNPC, Abr 2022 - Oct 2022</span>
-  <ul>
-    <li>Asistencia técnica.</li>
-    <li>Mantenimiento y reparación de equipos.</li>
-    <li>Inventariado.</li>
-    <li>Mantenimiento de servidores.</li>
-  </ul>
+  <div *ngFor="let ex of experience; let i = index">
+    <h2>{{ ex.position }}</h2>
+    <span>{{ ex.company }}</span>
+    <ul>
+      <li *ngFor="let des of ex.description">
+        {{ des }}
+      </li>
+    </ul>
+    <p-divider *ngIf="i < experience.length - 1"></p-divider>
+  </div>
 </p-fieldset>

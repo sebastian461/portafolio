@@ -1,21 +1,10 @@
 <p-fieldset legend="Cursos">
-  <h2>Aprende Programación Backend en C#.NET</h2>
-  <span> <strong>Instructor:</strong> Héctor de León</span> <br />
-  <span> <strong>Plataforma</strong> Udemy</span> <br />
-  <span> <strong>Fecha finalización:</strong> 02-2024</span> <br />
-  <span> <strong>Duración:</strong> 6 horas</span>
-  <p-divider></p-divider>
-
-  <h2>React: De cero a experto (Hooks y MERN)</h2>
-  <span> <strong>Instructor:</strong> Fernando Herrera</span> <br />
-  <span> <strong>Plataforma</strong> Udemy</span> <br />
-  <span> <strong>Fecha finalización:</strong> 02-2024</span> <br />
-  <span> <strong>Duración:</strong> 54 horas</span>
-  <p-divider></p-divider>
-
-  <h2>JavaScript Moderno: Guía para dominar ellenguaje</h2>
-  <span> <strong>Instructor:</strong> Fernando Herrera</span> <br />
-  <span> <strong>Plataforma</strong> Udemy</span> <br />
-  <span> <strong>Fecha finalización:</strong> 11-2023</span> <br />
-  <span> <strong>Duración:</strong> 22 horas</span>
+  <div *ngFor="let co of courses; let i = index">
+    <h2>{{ co.title }}</h2>
+    <span> <strong>Instructor:</strong> {{ co.instructor }}</span> <br />
+    <span> <strong>Plataforma</strong> {{ co.plataform }}</span> <br />
+    <span> <strong>Fecha finalización:</strong> {{ co.date }}</span> <br />
+    <span> <strong>Duración:</strong> {{ co.duration }} horas</span>
+    <p-divider *ngIf="i < courses.length - 1"></p-divider>
+  </div>
 </p-fieldset>

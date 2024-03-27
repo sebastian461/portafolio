@@ -1,65 +1,18 @@
 <p-fieldset legend="Habilidades">
-  <div class="grid nested-grid">
-    <div class="col-12">
-      <div class="grid align-items-center">
-        <div class="col-fixed">
-          <img
-            src="../../../../assets/Angular_gradient.png"
-            alt="Angular"
-            height="60px"
-          />
-        </div>
-        <div class="col">
-          <h2 class="mt-0">Angular</h2>
-          <p-progressBar [value]="50"></p-progressBar>
+  <div *ngFor="let skill of skills; let i = index">
+    <div class="grid nested-grid">
+      <div class="col-12">
+        <div class="grid align-items-center">
+          <div class="col-fixed">
+            <img [src]="skill.img" [alt]="skill.skill" height="60px" />
+          </div>
+          <div class="col">
+            <h2 class="mt-0">{{ skill.skill }}</h2>
+            <p-progressBar [value]="skill.percent"></p-progressBar>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <p-divider></p-divider>
-  <div class="grid nested-grid">
-    <div class="col-12">
-      <div class="grid align-items-center">
-        <div class="col-fixed">
-          <img src="../../../../assets/React.png" alt="React" height="60px" />
-        </div>
-        <div class="col">
-          <h2 class="mt-0">React</h2>
-          <p-progressBar [value]="50"></p-progressBar>
-        </div>
-      </div>
-    </div>
-  </div>
-  <p-divider></p-divider>
-  <div class="grid nested-grid">
-    <div class="col-12">
-      <div class="grid align-items-center">
-        <div class="col-fixed">
-          <img
-            src="../../../../assets/Laravel.png"
-            alt="Laravel"
-            height="60px"
-          />
-        </div>
-        <div class="col">
-          <h2 class="mt-0">Laravel</h2>
-          <p-progressBar [value]="25"></p-progressBar>
-        </div>
-      </div>
-    </div>
-  </div>
-  <p-divider></p-divider>
-  <div class="grid nested-grid">
-    <div class="col-12">
-      <div class="grid align-items-center">
-        <div class="col-fixed">
-          <img src="../../../../assets/netcore.png" alt=".NET" height="60px" />
-        </div>
-        <div class="col">
-          <h2 class="mt-0">.NET</h2>
-          <p-progressBar [value]="25"></p-progressBar>
-        </div>
-      </div>
-    </div>
+    <p-divider *ngIf="i < skills.length - 1"></p-divider>
   </div>
 </p-fieldset>

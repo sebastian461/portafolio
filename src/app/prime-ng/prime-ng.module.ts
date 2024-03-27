@@ -6,6 +6,6 @@ import { PanelModule } from 'primeng/panel';
 import { ProgressBarModule } from 'primeng/progressbar';
 
 @NgModule({
-  exports: [PanelModule, FieldsetModule, DividerModule, ProgressBarModule],
+  exports: [DividerModule, FieldsetModule, PanelModule, ProgressBarModule],
 })
 export class PrimeNgModule {}
