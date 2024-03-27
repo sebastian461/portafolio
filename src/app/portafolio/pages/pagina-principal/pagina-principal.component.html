@@ -1,95 +1,21 @@
-<portafolio-about />
+<ng-container>
+  <portafolio-about />
 
-<div class="grid">
-  <div class="col-12 md:col-6">
-    <portafolio-experience />
+  <div class="grid">
+    <div class="col-12 md:col-6">
+      <portafolio-experience />
+    </div>
+
+    <div class="col-12 md:col-6">
+      <portafolio-education />
+    </div>
+
+    <div class="col-12 md:col-6">
+      <portafolio-courses />
+    </div>
+
+    <div class="col-12 md:col-6">
+      <portafolio-skills />
+    </div>
   </div>
-
-  <div class="col-12 md:col-6">
-    <portafolio-education />
-  </div>
-
-  <div class="col-12 md:col-6">
-    <portafolio-courses />
-  </div>
-
-  <!-- <div class="col-12 md:col-6">
-    <p-fieldset legend="Proyectos"></p-fieldset>
-  </div> -->
-
-  <div class="col-12 md:col-6">
-    <p-fieldset legend="Habilidades">
-      <div class="grid nested-grid">
-        <div class="col-12">
-          <div class="grid align-items-center">
-            <div class="col-fixed">
-              <img
-                src="../../../../assets/Angular_gradient.png"
-                alt="Angular"
-                height="60px"
-              />
-            </div>
-            <div class="col">
-              <h2 class="mt-0">Angular</h2>
-              <p-progressBar [value]="50"></p-progressBar>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p-divider></p-divider>
-      <div class="grid nested-grid">
-        <div class="col-12">
-          <div class="grid align-items-center">
-            <div class="col-fixed">
-              <img
-                src="../../../../assets/React.png"
-                alt="React"
-                height="60px"
-              />
-            </div>
-            <div class="col">
-              <h2 class="mt-0">React</h2>
-              <p-progressBar [value]="50"></p-progressBar>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p-divider></p-divider>
-      <div class="grid nested-grid">
-        <div class="col-12">
-          <div class="grid align-items-center">
-            <div class="col-fixed">
-              <img
-                src="../../../../assets/Laravel.png"
-                alt="Laravel"
-                height="60px"
-              />
-            </div>
-            <div class="col">
-              <h2 class="mt-0">Laravel</h2>
-              <p-progressBar [value]="25"></p-progressBar>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p-divider></p-divider>
-      <div class="grid nested-grid">
-        <div class="col-12">
-          <div class="grid align-items-center">
-            <div class="col-fixed">
-              <img
-                src="../../../../assets/netcore.png"
-                alt=".NET"
-                height="60px"
-              />
-            </div>
-            <div class="col">
-              <h2 class="mt-0">.NET</h2>
-              <p-progressBar [value]="25"></p-progressBar>
-            </div>
-          </div>
-        </div>
-      </div>
-    </p-fieldset>
-  </div>
-</div>
+</ng-container>
