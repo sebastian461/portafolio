@@ -4,9 +4,10 @@ import { CommonModule } from '@angular/common';
 import { PortafolioRoutingModule } from './portafolio-routing.module';
 import { PaginaPrincipalComponent } from './pages/pagina-principal/pagina-principal.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
-  declarations: [PaginaPrincipalComponent],
+  declarations: [PaginaPrincipalComponent, AboutComponent],
   imports: [CommonModule, PortafolioRoutingModule, PrimeNgModule],
 })
 export class PortafolioModule {}
