@@ -1,0 +1,10 @@
+<p-fieldset legend="Cursos">
+  <div *ngFor="let co of courses; let i = index">
+    <h2>{{ co.title }}</h2>
+    <span> <strong>Instructor:</strong> {{ co.instructor }}</span> <br />
+    <span> <strong>Plataforma</strong> {{ co.plataform }}</span> <br />
+    <span> <strong>Fecha finalización:</strong> {{ co.date }}</span> <br />
+    <span> <strong>Duración:</strong> {{ co.duration }} horas</span>
+    <p-divider *ngIf="i < courses.length - 1"></p-divider>
+  </div>
+</p-fieldset>

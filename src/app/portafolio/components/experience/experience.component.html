@@ -1,0 +1,12 @@
+<p-fieldset legend="Experiencia">
+  <div *ngFor="let ex of experience; let i = index">
+    <h2>{{ ex.position }}</h2>
+    <span>{{ ex.company }}</span>
+    <ul>
+      <li *ngFor="let des of ex.description">
+        {{ des }}
+      </li>
+    </ul>
+    <p-divider *ngIf="i < experience.length - 1"></p-divider>
+  </div>
+</p-fieldset>
