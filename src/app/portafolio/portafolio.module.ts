@@ -6,9 +6,11 @@ import { PaginaPrincipalComponent } from './pages/pagina-principal/pagina-princi
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
+import { CoursesComponent } from './components/courses/courses.component';
 
 @NgModule({
-  declarations: [PaginaPrincipalComponent, AboutComponent, ExperienceComponent],
+  declarations: [PaginaPrincipalComponent, AboutComponent, ExperienceComponent, EducationComponent, CoursesComponent],
   imports: [CommonModule, PortafolioRoutingModule, PrimeNgModule],
 })
 export class PortafolioModule {}
