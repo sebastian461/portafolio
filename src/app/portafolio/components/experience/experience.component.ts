@@ -12,7 +12,7 @@ export class ExperienceComponent {
       position: 'Asistente en Sistemas',
       company: 'ITSEP, Noviembre 2022 - Abril 2023',
       description: [
-        'Desarrollo del sistema informático de Autoevaluacióninstitucional.',
+        'Desarrollo del sistema informático de Autoevaluación institucional.',
       ],
     },
     {
