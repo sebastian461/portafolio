@@ -14,7 +14,7 @@ export class EducationComponent {
       description: 'Ingeniería en Ciencias de la Computación',
     },
     {
-      institute: "Academia Aeronáutica 'MayorPedro Traversari'",
+      institute: "Academia Aeronáutica 'Mayor Pedro Traversari'",
       date: '2016',
       description: 'Bachiller en Ciencias',
     },
