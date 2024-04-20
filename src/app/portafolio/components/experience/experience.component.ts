@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Signal, computed, inject } from '@angular/core';
 import { Experience } from '../../interfaces/data.interface';
+import { DataService } from '../../../services/data.service';
 
 @Component({
   selector: 'portafolio-experience',
@@ -7,23 +8,9 @@ import { Experience } from '../../interfaces/data.interface';
   styles: ``,
 })
 export class ExperienceComponent {
-  public experience: Experience[] = [
-    {
-      position: 'Asistente en Sistemas',
-      company: 'ITSEP, Noviembre 2022 - Abril 2023',
-      description: [
-        'Desarrollo del sistema informático de Autoevaluación institucional.',
-      ],
-    },
-    {
-      position: 'Pasante IT',
-      company: 'Empresa CNPC, Abr 2022 - Oct 2022',
-      description: [
-        'Asistencia técnica.',
-        'Mantenimiento y reparación de equipos.',
-        'Inventariado.',
-        'Mantenimiento de servidores.',
-      ],
-    },
-  ];
+  private dataService = inject(DataService);
+
+  public experience: Signal<Experience[]> = computed(
+    () => this.dataService.data().experience
+  );
 }
