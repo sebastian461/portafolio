@@ -1,8 +1,9 @@
 <p-fieldset legend="Educación">
-  <div *ngFor="let edu of education(); let i = index">
-    <h2>{{ edu.institute }}</h2>
-    <span>{{ edu.date }}</span>
-    <p>{{ edu.description }}</p>
-    <p-divider *ngIf="i < education().length - 1"></p-divider>
-  </div>
+  @for (edu of education(); track $index) {
+  <h2>{{ edu.institute }}</h2>
+  <span>{{ edu.date }}</span>
+  <p>{{ edu.description }}</p>
+  @if ($index < education().length - 1) {
+  <p-divider></p-divider>
+  } }
 </p-fieldset>
