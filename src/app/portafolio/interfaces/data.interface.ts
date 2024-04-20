@@ -13,7 +13,7 @@ export interface Course {
   instructor: string;
   plataform: string;
   date: string;
-  duration: number;
+  url: string;
 }
 
 export interface Education {

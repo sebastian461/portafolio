@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Signal, computed, inject } from '@angular/core';
 import { Education } from '../../interfaces/data.interface';
+import { DataService } from '../../../services/data.service';
 
 @Component({
   selector: 'portafolio-education',
@@ -7,16 +8,9 @@ import { Education } from '../../interfaces/data.interface';
   styles: ``,
 })
 export class EducationComponent {
-  public education: Education[] = [
-    {
-      institute: 'Universidad UTE',
-      date: '2019 - 2023',
-      description: 'Ingeniería en Ciencias de la Computación',
-    },
-    {
-      institute: "Academia Aeronáutica 'Mayor Pedro Traversari'",
-      date: '2016',
-      description: 'Bachiller en Ciencias',
-    },
-  ];
+  private dataService = inject(DataService);
+
+  public education: Signal<Education[]> = computed(
+    () => this.dataService.data().education
+  );
 }

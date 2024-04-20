@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Signal, computed, inject } from '@angular/core';
 import { Course } from '../../interfaces/data.interface';
+import { DataService } from '../../../services/data.service';
 
 @Component({
   selector: 'portafolio-courses',
@@ -7,27 +8,8 @@ import { Course } from '../../interfaces/data.interface';
   styles: ``,
 })
 export class CoursesComponent {
-  public courses: Course[] = [
-    {
-      title: 'Aprende Programación Backend en C#.NET',
-      instructor: 'Héctor de León',
-      plataform: 'Udemy',
-      date: '02-2024',
-      duration: 6,
-    },
-    {
-      title: 'React: De cero a experto (Hooks y MERN)',
-      instructor: 'Fernando Herrera',
-      plataform: 'Udemy',
-      date: '02-2024',
-      duration: 54,
-    },
-    {
-      title: 'JavaScript Moderno: Guía para dominar ellenguaje',
-      instructor: 'Fernando Herrera',
-      plataform: 'Udemy',
-      date: '11-2023',
-      duration: 22,
-    },
-  ];
+  private dataService = inject(DataService);
+  public courses: Signal<Course[]> = computed(
+    () => this.dataService.data().courses
+  );
 }

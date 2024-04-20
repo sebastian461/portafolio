@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Signal, computed, inject } from '@angular/core';
 import { Info } from '../../interfaces/data.interface';
+import { DataService } from '../../../services/data.service';
 
 @Component({
   selector: 'portafolio-about',
@@ -7,9 +8,7 @@ import { Info } from '../../interfaces/data.interface';
   styles: ``,
 })
 export class AboutComponent {
-  public info: Info = {
-    name: 'Sebastián Álava',
-    description:
-      'Soy ingeniero en Ciencias de la Computación con experiencia en desarrollo full stack junior. Aunque actualmente estoy buscando oportunidades laborales, mi interés y habilidad en el desarrollo web me mantienen en constante aprendizaje y crecimiento profesional. Me apasiona explorar nuevas tecnologías y tengo un compromiso firme con el aprendizaje autónomo, lo que me permite adaptarme y evolucionar en el dinámico campo de la informática.',
-  };
+  private dataService = inject(DataService);
+
+  public info: Signal<Info> = computed(() => this.dataService.data().info);
 }
