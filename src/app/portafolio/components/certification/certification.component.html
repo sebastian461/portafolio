@@ -1,0 +1,14 @@
+<p-fieldset legend="Cursos">
+  @for (ce of certifications(); track $index) {
+  <h2>{{ ce.certification }}</h2>
+  <span> <strong>Plataforma:</strong> {{ ce.plataform }}</span> <br />
+  <span> <strong>Fecha finalización:</strong> {{ ce.date }}</span> <br />
+  <span
+    ><strong>
+      <a [href]="ce.url" target="_blank">Certificado</a>
+    </strong>
+  </span>
+  @if ($index < certifications().length - 1) {
+  <p-divider></p-divider>
+  } }
+</p-fieldset>
