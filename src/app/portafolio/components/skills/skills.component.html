@@ -1,4 +1,4 @@
-<p-fieldset legend="Habilidades">
+<p-fieldset legend="Habilidades" [toggleable]="true" [collapsed]="true">
   @for (skill of skills(); track $index;) {
   <div class="grid nested-grid">
     <div class="col-12">

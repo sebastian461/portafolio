@@ -10,6 +10,7 @@ import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { PaginaPrincipalComponent } from './pages/pagina-principal/pagina-principal.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { CertificationComponent } from './components/certification/certification.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     ExperienceComponent,
     PaginaPrincipalComponent,
     SkillsComponent,
+    CertificationComponent,
   ],
   imports: [CommonModule, PortafolioRoutingModule, PrimeNgModule],
 })

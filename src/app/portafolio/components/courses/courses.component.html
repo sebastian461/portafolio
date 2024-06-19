@@ -1,4 +1,4 @@
-<p-fieldset legend="Cursos">
+<p-fieldset legend="Cursos" [toggleable]="true" [collapsed]="true">
   @for (co of courses(); track $index) {
   <h2>{{ co.title }}</h2>
   <span> <strong>Instructor:</strong> {{ co.instructor }}</span> <br />
