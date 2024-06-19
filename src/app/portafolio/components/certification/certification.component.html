@@ -1,4 +1,4 @@
-<p-fieldset legend="Cursos">
+<p-fieldset legend="Certificados" [toggleable]="true" [collapsed]="true">
   @for (ce of certifications(); track $index) {
   <h2>{{ ce.certification }}</h2>
   <span> <strong>Plataforma:</strong> {{ ce.plataform }}</span> <br />

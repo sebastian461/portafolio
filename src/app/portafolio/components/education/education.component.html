@@ -1,4 +1,4 @@
-<p-fieldset legend="Educación">
+<p-fieldset legend="Educación" [toggleable]="true" [collapsed]="true">
   @for (edu of education(); track $index) {
   <h2>{{ edu.institute }}</h2>
   <span>{{ edu.date }}</span>
