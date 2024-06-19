@@ -6,6 +6,7 @@ export interface Data {
   education: Education[];
   courses: Course[];
   skills: Skill[];
+  certifications: Certification[];
 }
 
 export interface Course {
@@ -37,4 +38,11 @@ export interface Skill {
   skill: string;
   percent: number;
   img: string;
+}
+
+export interface Certification {
+  certification: string;
+  plataform: string;
+  date: string;
+  url?: string;
 }

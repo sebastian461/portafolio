@@ -94,6 +94,20 @@ export class DataService {
         img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1024px-Microsoft_.NET_logo.svg.png',
       },
     ],
+    certifications: [
+      {
+        certification: 'Responsive Web Design',
+        plataform: 'freeCodeCamp',
+        date: '06-2024',
+        url: 'https://www.freecodecamp.org/certification/fcc984eab0a-7c0e-4410-be16-d85b5d49f409/responsive-web-design',
+      },
+      {
+        certification: 'Foundational C# with Microsoft',
+        plataform: 'freeCodeCamp',
+        date: '06-2024',
+        url: 'https://www.freecodecamp.org/certification/fcc984eab0a-7c0e-4410-be16-d85b5d49f409/foundational-c-sharp-with-microsoft',
+      },
+    ],
   });
   constructor() {}
 }
