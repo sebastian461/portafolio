@@ -1,4 +1,4 @@
-<p-fieldset legend="Experiencia">
+<p-fieldset legend="Experiencia" [toggleable]="true" [collapsed]="true">
   @for (ex of experience(); track $index) {
   <h2>{{ ex.position }}</h2>
   <span>{{ ex.company }}</span>

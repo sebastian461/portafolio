@@ -9,7 +9,7 @@ export class DataService {
     info: {
       name: 'Sebastián Álava',
       description:
-        'Soy ingeniero en Ciencias de la Computación con experiencia en desarrollo full stack junior. Aunque actualmente estoy buscando oportunidades laborales, mi interés y habilidad en el desarrollo web me mantienen en constante aprendizaje y crecimiento profesional. Me apasiona explorar nuevas tecnologías y tengo un compromiso firme con el aprendizaje autónomo, lo que me permite adaptarme y evolucionar en el dinámico campo de la informática.',
+        'Soy ingeniero en Ciencias de la Computación con experiencia como desarrollador full stack junior. Actualmente en búsqueda de nuevas oportunidades laborales, me mantengo en constante aprendizaje y crecimiento profesional, impulsado por mi pasión por el desarrollo web. Mi entusiasmo por explorar nuevas tecnologías y mi compromiso con el aprendizaje autónomo me permiten adaptarme y evolucionar continuamente en el dinámico campo de la informática.',
     },
     experience: [
       {
@@ -92,6 +92,20 @@ export class DataService {
         skill: '.NET',
         percent: 25,
         img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1024px-Microsoft_.NET_logo.svg.png',
+      },
+    ],
+    certifications: [
+      {
+        certification: 'Responsive Web Design',
+        plataform: 'freeCodeCamp',
+        date: '06-2024',
+        url: 'https://www.freecodecamp.org/certification/fcc984eab0a-7c0e-4410-be16-d85b5d49f409/responsive-web-design',
+      },
+      {
+        certification: 'Foundational C# with Microsoft',
+        plataform: 'freeCodeCamp',
+        date: '06-2024',
+        url: 'https://www.freecodecamp.org/certification/fcc984eab0a-7c0e-4410-be16-d85b5d49f409/foundational-c-sharp-with-microsoft',
       },
     ],
   });
